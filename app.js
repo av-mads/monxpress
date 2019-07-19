@@ -8,7 +8,7 @@ var index = require('./routes/index.js')
 app.use('/', index);
 
 // Connect to db
-mongoose.connect("mongodb+srv://Mads:fbihund888@cluster0-snbmm.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true }).then(console.log('con sucess'));
+mongoose.connect('mongodb+srv://Mads:fbihund888@cluster0-snbmm.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }).then(console.log('con sucess'));
 
 // Routes
 app.get('/', (req, res) => {
